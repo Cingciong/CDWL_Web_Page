@@ -1,5 +1,15 @@
 @charset "UTF-8";
-
+/*!
+* Start Bootstrap - Business Frontpage v5.0.8 (https://startbootstrap.com/template/business-frontpage)
+* Copyright 2013-2022 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-frontpage/blob/master/LICENSE)
+*/
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -66,6 +76,61 @@
   }
 }
 
+body {
+  background-color: #ffd000;
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+}
+
+.moj1{
+  min-height: 1080px;
+  width: 1920px;
+  margin: auto;
+  background-image: url("/assets/img/1.png");
+}
+
+.divcut{
+ background-color: #191c1f;
+ height:100px;
+ width:100%;
+
+}
+
+.window-holder{
+  background-color:#101214;
+  width:100%;
+  height:1080px;
+}
+
+.window-holder-2{
+  background-color: transparent;
+  width: 1920px;
+  height: 1080px;
+  margin: auto;
+}
+
+.window-holder-3{
+  background-color: transparent;
+  width: 960px;
+  height: 1080px;
+  float: left;
+}
+
+.window-1{
+  width:593px;
+  height:224.856px;
+  margin-top: 90px;
+  margin-left:auto ;
+  margin-right:auto ;
+  float:left;
+  text-align: center;
+  background-color: #04414d;
+}
 
 hr {
   margin: 1rem 0;
@@ -2465,6 +2530,8 @@ textarea.form-control-lg {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  -webkit-print-color-adjust: exact;
+          color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -7467,10 +7534,9 @@ textarea.form-control-lg {
 }
 
 .py-5 {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
-
 
 .pt-0 {
   padding-top: 0 !important;
@@ -7817,14 +7883,9 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
-body{
-  background-color: #ffd000;
-}
-
 .bg-dark {
-  
-  background-image: "1.png";
- 
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
