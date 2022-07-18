@@ -105,9 +105,11 @@ width: 100%;
 }
 
 .moj1{
-  min-height: 2160px;
-  width: 3880px;
-  background-image: url("/assets/img/city.png");
+  margin:auto;
+  min-height: 1080px;
+  width: 100%;
+  background-image: url("/assets/img/jojo.png"), url("/assets/img/city.png");
+  background-position: 25% 250%,bottom center;
   background-size:auto;
   background-repeat: no-repeat;
 }
@@ -119,9 +121,60 @@ img {
 
 .divcut{
 background-color: #20202b;
- height:1080px;
+ height:1500px;
  width:100%;
+ background-image: url("/assets/img/john.png");
+}
 
+.divcut-part-1{
+  height:100%;
+  width:30%;
+  float:left;
+}
+
+.divcut-part-2{
+  height:100%;
+  width:70%;
+  float: right;
+  position: relative;
+}
+
+.divcut-header {
+  background-color: #ffd000;
+  width: 100%;
+  height:25%;
+  -webkit-clip-path: polygon(0 100%, 13% 94%, 31% 100%, 27% 94%, 39% 94%, 36% 100%, 47% 94%, 51% 94%, 57% 100%, 62% 94%, 67% 100%, 78% 95%, 88% 95%, 89% 100%, 95% 95%, 100% 100%, 100% 93%, 100% 87%, 100% 14%, 86% 0%, 27% 0%, 0 0);
+  clip-path: polygon(0 100%, 13% 94%, 31% 100%, 27% 94%, 39% 94%, 36% 100%, 47% 94%, 51% 94%, 57% 100%, 62% 94%, 67% 100%, 78% 95%, 88% 95%, 89% 100%, 95% 95%, 100% 100%, 100% 93%, 100% 87%, 100% 14%, 86% 0%, 27% 0%, 0 0);
+  
+  background-image: url("/assets/img/hr.png");
+  background-position: 30% 35%;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  margin-top:60%;
+
+}
+
+.div-cut-container{
+  position: absolute;
+  bottom: 0px;
+  height: 40%;
+  width:100%;
+}
+
+.div-cut-window{
+  -webkit-clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 100%, 20% 100%, 0% 80%);
+clip-path: polygon(0 0, 80% 0%, 100% 20%, 100% 100%, 20% 100%, 0% 80%);
+background-color: #00f0ff;
+height: 40%;
+width: 30%;
+margin-left:10%;
+float:left;
+}
+
+
+h1{
+  font-weight: 1000;
 }
 
 .highlight-holder{
@@ -133,25 +186,19 @@ background-color: #20202b;
 
 .text-holder{
   width: 1664px;
-  font-size: 70px;
+  font-size: 400%;
   text-align: center;
-  padding-bottom: 24px;
-  padding-top: 20px;
+  padding-bottom: 1.5%;
+  padding-top: 2%;
 }
 
 .text-holder-2{
-  height: 60px;
-  font-size: 22px;
-  padding-bottom: 24px;
+  height: 9%;
+  font-size: 200%;
+  padding-bottom: 6%;
   text-align: center;
 }
 
-.wide-window-holder{
-  width:1420px;
-  height:800px;
-  margin:auto;
-  margin-top: 30px;
-}
 
 .header-holder{
   margin-left:auto;
@@ -160,32 +207,53 @@ background-color: #20202b;
   height:202px;
 }
 
+.wide-window-holder{
+  width: 80%;
+  margin:auto;
+  margin-top: 5%;
+}
+
 .window-holder{
   width:100%;
-  height:1080px;
+  height:80%;
+}
+
+.always-on-screen{
+  margin-top:5%;
+  position: fixed;
+  float:right;
+  width:13%;
+  height: 12%;
+  z-index: 9999;
+  background-color:#00f0ff;
+  text-align:center;
+  -webkit-clip-path: polygon(69% 0, 100% 25%, 100% 100%, 50% 100%, 0 100%, 0 0);
+  clip-path: polygon(69% 0, 100% 25%, 100% 100%, 50% 100%, 0 100%, 0 0);
 }
 
 .window-1:hover{
- background-color: whitesmoke;
-}
+  background-color: whitesmoke;
+ }
+ 
+ 
+ .window-1{
+   transition: background-color 0.5s;
+   width:46%;
+   height:90%;
+   margin-left:2%;
+   float:left;
+   text-align: center;
+   background-color: #00f0ff;
+   padding:15px;
+   border: 5px solid #000;
+ }
+ 
+ .window-text{
+ font-size:35px;
+ text-align: center;
+ }
+ 
 
-
-.window-1{
-  transition: background-color 0.5s;
-  width:700px;
-  height:600px;
-  margin:5px;
-  float:left;
-  text-align: center;
-  background-color: #00f0ff;
-  padding:15px;
-  border: 5px solid #000;
-}
-
-.window-text{
-font-size:35px;
-text-align: center;
-}
 
 button{
   background: url('/assets/img/arrow-1.png');
@@ -203,7 +271,7 @@ img{
 }
 
 .img-holder{
-  height:70%;
+  height:auto;
   width:100%;
 }
 /*
