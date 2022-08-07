@@ -99,7 +99,10 @@ body {
   font: "Blender Pro";
 }
 
+.pudlo{
+  width: 1920px;
 
+}
 
 .margin-twoja-mać{
 height:5vh;
@@ -126,9 +129,6 @@ img {
 }
 
 .divcut-holder{
-  background-color: #20202b;
-  background-image: url("/assets/img/john.png");
-  background-size: 15vh;
 }
 
 .divcut{
@@ -197,7 +197,7 @@ h1{
 }
 
 .highlight-holder{
-  width: 100%;
+  width: 200vh;
  height:100vh;
   margin-left:auto;
   margin-right:auto;
@@ -258,7 +258,7 @@ h1{
    transition: background-color 0.5s;
    width:70vh;
    height:65vh;
-   margin-left:3vh;
+   margin-left:4vh;
    float:left;
    text-align: center;
    background-color: #00f0ff;
