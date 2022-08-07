@@ -3,7 +3,7 @@ const express = require("express")
 const app = express()
 
 //veriables
-const port = 808;
+const port = 8080;
 
 const path = require("path")
 
